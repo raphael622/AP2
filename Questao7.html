@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Questão 7</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration-color: black;
+        }
+        #top{
+             width: 100%;
+            height: 40px;
+            margin-top: 20px;
+
+        }
+        div#area {
+            background: rgb(127, 141, 223);
+            width: 500px;
+            height: 50px;
+            line-height: 35px;
+            margin: auto;
+            margin-top: 250px;
+        }
+        #Informe{
+        font-size: 20px; 
+        text-align: center; 
+        font: arial;
+        text-align: justify;
+        margin: auto 30px;
+        margin-top: 10px;
+        margin-left: 172px;
+        
+    }
+
+    #top nav a{
+        display: inline;
+        padding-right: 15px;
+        margin-left: 80px;
+        font-size: 17px;
+        font-style: arial;
+        text-decoration: none;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div id=top>
+        <nav>
+        <strong> 
+            <a id="questao1"  href="questao1.html">Questão 1</a>
+            <a id="questao2"  href="questao2.html">Questão 2</a>
+            <a id="questao3"  href="questao3.html">Questão 3</a>
+            <a id="questao4"  href="questao4.html">Questão 4</a>
+            <a id="questao5"  href="questao5.html">Questão 5</a>
+            <a id="questao6"  href="questao6.html">Questão 6</a>
+            <a id="questao7"  href="questao7.html">Questão 7</a>
+            <a id="questao8"  href="questao8.html">Questão 8</a>
+            <a id="questao9"  href="questao9.html">Questão 9</a>
+            <a id="questao10"  href="questao10.html">Questão 10</a>
+        </strong> 
+        </nav>    
+            <section>
+                <div id="area">
+                    <p id=Informe> <br>
+                    <br>
+                    <br>
+                
+                </div>
+        
+            </section>            
+    <script type="text/javascript">
+    
+            var contador = 0;
+            var valorfinal = 0;
+
+            while(contador<20){
+            var numero = prompt("Digite o valor");
+            valorfinal = parseInt(numero)+valorfinal;
+            contador++;
+                }
+            document.getElementById("Informe").innerHTML = 'A somatoria é ' + valorfinal;
+        
+    
+        
+    
+
+    </script>
+</body>
+</html>

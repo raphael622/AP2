@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration-color: black;
+        }
+        #top{
+             width: 100%;
+            height: 40px;
+            margin-top: 20px;
+
+        }
+        div#area {
+            background: rgb(127, 141, 223);
+            width: 500px;
+            height: 290px;
+            line-height: 50px;
+            margin: auto;
+            margin-top: 250px;
+        }
+        #Informe{
+        font-size: 20px; 
+        text-align: center; 
+        font: arial;  
+      }
+    .questionario{
+        margin-left: 30px;
+    }
+    #top nav a{
+        display: inline;
+        padding-right: 15px;
+        margin-left: 80px;
+        font-size: 17px;
+        font-style: arial;
+        text-decoration: none;
+     }
+
+    </style>
+</head>
+<body>
+    <div id=top>
+        <nav>
+        <strong> 
+            <a id="questao1"  href="questao1.html">Questão 1</a>
+            <a id="questao2"  href="questao2.html">Questão 2</a>
+            <a id="questao3"  href="questao3.html">Questão 3</a>
+            <a id="questao4"  href="questao4.html">Questão 4</a>
+            <a id="questao5"  href="questao5.html">Questão 5</a>
+            <a id="questao6"  href="questao6.html">Questão 6</a>
+            <a id="questao7"  href="questao7.html">Questão 7</a>
+            <a id="questao8"  href="questao8.html">Questão 8</a>
+            <a id="questao9"  href="questao9.html">Questão 9</a>
+            <a id="questao10"  href="questao10.html">Questão 10</a>
+        </strong> 
+        </nav>    
+
+    </div>
+        <div id="area">
+            <p id=Informe>Digite três números para calcular a média Aritmética</p> 
+            <form class="questionario" method="post">
+                    <label>Primeiro Número:</label>
+                    <input type="number" id="numero1" value="" max="10000000000">
+                    <br>
+                    <label>Segundo Número:</label>
+                    <input type="number" id="numero2" value="" max="10000000000">
+                    <br>
+                    <label>Terceiro Número:</label>
+                    <input type="number" id="numero3" value="" max="100000000000">
+                    <br>
+                    <input type="button" onclick="javascript:calculo();" name="name" value="Calcular">
+                    <input type="text" id="txtResultado" value="">
+                </form>
+        </div>
+    <script type="text/javascript">
+        function calculo() {
+            var numero1 = parseFloat(document.getElementById('numero1').value);
+            var numero2 = parseFloat(document.getElementById('numero2').value);
+            var numero3 = parseFloat(document.getElementById('numero3').value);
+  
+
+            var resultado = parseFloat((numero1 + numero2 + numero3) / 3);
+
+
+  document.getElementById('txtResultado').setAttribute("value", resultado);
+}
+
+        
+    
+
+    </script>
+</body>
+</html>

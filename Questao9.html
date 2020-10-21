@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Questão 9</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration-color: black;
+        }
+        #top{
+             width: 100%;
+            height: 40px;
+            margin-top: 20px;
+
+        }
+        div#area {
+            background: rgb(127, 141, 223);
+            width: 500px;
+            height: 160px;
+            line-height: 35px;
+            margin: auto;
+            margin-top: 250px;
+        }
+        #Informe{
+        font-size: 20px; 
+        text-align: center; 
+        font: arial;
+        text-align: justify;
+        margin: auto 30px;
+        margin-top: 10px;
+        margin-left: 102px;
+    
+    
+      }
+    .questionario{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    #top nav a{
+        display: inline;
+        padding-right: 15px;
+        margin-left: 80px;
+        font-size: 17px;
+        font-style: arial;
+        text-decoration: none;
+    
+
+    }
+    #res {
+         width: 400px;
+         height: 30px;
+         margin-top: 40px;
+         margin-left: 40px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id=top>
+        <nav>
+        <strong> 
+            <a id="questao1"  href="questao1.html">Questão 1</a>
+            <a id="questao2"  href="questao2.html">Questão 2</a>
+            <a id="questao3"  href="questao3.html">Questão 3</a>
+            <a id="questao4"  href="questao4.html">Questão 4</a>
+            <a id="questao5"  href="questao5.html">Questão 5</a>
+            <a id="questao6"  href="questao6.html">Questão 6</a>
+            <a id="questao7"  href="questao7.html">Questão 7</a>
+            <a id="questao8"  href="questao8.html">Questão 8</a>
+            <a id="questao9"  href="questao9.html">Questão 9</a>
+            <a id="questao10"  href="questao10.html">Questão 10</a>
+        </strong> 
+        </nav>    
+            <section>
+                <div id="area">
+                <p id=Informe><br>
+            </div>
+        
+            </section>            
+    <script type="text/javascript">
+
+        var valorfinal = 0;
+        while(x!=0){
+                    
+        var x=prompt("Escolha entre as opções 100-Cachorro Quente, 101-Bauru simples, 102-Bauru com ovo, 103-Hamburguer, 104-Cheeseburguer, 105- Refrigerante. Digite 0 para encerrar o pedido");
+        if (x==0) {
+        document.getElementById('Informe').innerHTML += '<p> O valor total do seu pedido é  ' + valorfinal + '.</p>'
+
+        }
+        else
+    {
+        var y=prompt("Quantos você deseja?");
+        switch(x)
+        {
+        case "100":
+        valorfinal = valorfinal+(1.70*y);
+         break;
+        case "101":
+        valorfinal = valorfinal+(2.30*y);
+        break;
+        case "102":
+        valorfinal = valorfinal+(2.60*y);
+        break;
+        case "103":
+        valorfinal = valorfinal+(2.40*y);
+        break;
+        case "104":
+        valorfinal = valorfinal+(2.50*y);
+        break;
+        case "105":
+        valorfinal = valorfinal+(1.00*y);
+        break;
+ }
+ }
+ }
+
+            
+
+        
+                
+                
+
+
+        
+        
+
+
+
+                    
+
+        
+    
+
+    </script>
+</body>
+</html>

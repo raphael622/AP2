@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration-color: black;
+        }
+        #top{
+             width: 100%;
+            height: 40px;
+            margin-top: 20px;
+
+        }
+        div#area {
+            background: rgb(127, 141, 223);
+            width: 500px;
+            height: 380px;
+            line-height: 35px;
+            margin: auto;
+            margin-top: 250px;
+        }
+        #Informe{
+        font-size: 20px; 
+        text-align: center; 
+        font: arial;
+        text-align: justify;
+        margin: auto 30px;
+        margin-top: 10px;
+        line-height: 1.1 ;
+    
+    
+      }
+    .questionario{
+        margin-left: 30px;
+    }
+    #top nav a{
+        display: inline;
+        padding-right: 15px;
+        margin-left: 80px;
+        font-size: 17px;
+        font-style: arial;
+        text-decoration: none;
+     }
+
+    </style>
+</head>
+<body>
+    <div id=top>
+        <nav>
+        <strong> 
+            <a id="questao1"  href="questao1.html">Questão 1</a>
+            <a id="questao2"  href="questao2.html">Questão 2</a>
+            <a id="questao3"  href="questao3.html">Questão 3</a>
+            <a id="questao4"  href="questao4.html">Questão 4</a>
+            <a id="questao5"  href="questao5.html">Questão 5</a>
+            <a id="questao6"  href="questao6.html">Questão 6</a>
+            <a id="questao7"  href="questao7.html">Questão 7</a>
+            <a id="questao8"  href="questao8.html">Questão 8</a>
+            <a id="questao9"  href="questao9.html">Questão 9</a>
+            <a id="questao10"  href="questao10.html">Questão 10</a>
+        </strong> 
+        </nav>    
+
+    </div>
+        <div id="area">
+            <p id=Informe>A partir do preço à vista de um determinado produto, será calculado o preço total a pagar e o
+                valor da prestação mensal, referentes ao pagamento parcelado. Se o pagamento for
+                parcelado em 3 vezes deve ser dado um acréscimo de 10% no total a ser pago. Se o
+                parcelamento for em 5 vezes, o acréscimo será de 20%.</p> 
+            <br>
+            <form class="questionario" method="post">
+                    <label>Valor do produto à vista:</label>
+                    <input type="number" id="valor" value="" max="10000000000">
+                    <br>
+                    <label>Parcelas:</label>
+
+                    
+                    <input type="radio"   name="ra" id="n1"/>  <label for="n1"><strong> 3x<strong></label>
+                    <input type="radio"   name="ra" id="n2"/>   <label for="n2"><strong> 5x<strong></label> <input type="button" onclick="javascript:calculo();" name="name" value="calcular">
+                
+                
+                    <br>
+                    
+                   
+
+                    <label>Valor Total: </label><input type="text" id="txtResultado" value="" > <br>
+                    <label>Valor das Parcelas: </label><input type="text" id="parcelas" value="" >
+                
+                    
+    <script type="text/javascript">
+        function calculo() 
+        {
+            var valor = parseFloat(document.getElementById("valor").value);
+        
+           
+            if(document.getElementById('n1').checked)
+            {
+                document.getElementById('txtResultado').value = ((valor * 0.10) + valor);
+                document.getElementById('parcelas').value = ((valor * 0.10) + valor)/3;
+            }
+                                
+            else if(document.getElementById('n2').checked)
+            {
+                document.getElementById('txtResultado').value = ((valor * 0.20) + valor);
+                document.getElementById('parcelas').value = ((valor * 0.20) + valor)/5;
+                
+
+
+            }
+        }
+
+
+
+                    
+
+        
+    
+
+    </script>
+</body>
+</html>
